@@ -3,6 +3,7 @@ package com.grafixartist.bottomnav;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,10 +31,10 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     }
     //Заливаем в массив категории
     private void prepareDesserts() {
-        phones.add(new Phone ("Разработчик 2d", "Я тип чувак жесткий и ваваавававававаgffffffffffffffffffffffffffffffff...", "15m"));
-        phones.add(new Phone ("Разработчик 3d", "Прогер тупо че когоgggggggggggg", "1d"));
-        phones.add(new Phone ("Разработчик 4d", "Тупо рядовой Жмышенко отдельно мехdfsdfsdfsdfsdfssfdfsdf...", "12h"));
-        phones.add(new Phone ("Разработчик Nd и вообще ", "Камон я Лосевffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "10s"));
+        phones.add(new Phone ("Разработчик 2d", "Я тип чувак жесткий и ваваавававававаgffffffffffffffffffffffffffffffff...", "15m","","Люблю все кроме тебя"));
+        phones.add(new Phone ("Разработчик 3d", "Прогер тупо че когоgggggggggggg", "1d","","Люблю все кроме тебя"));
+        phones.add(new Phone ("Разработчик 4d", "Тупо рядовой Жмышенко отдельно мехdfsdfsdfsdfsdfssfdfsdf...", "12h","","Люблю все кроме тебя"));
+        phones.add(new Phone ("Разработчик Nd и вообще ", "Камон я Лосевffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "10s","","Люблю все кроме тебя"));
     }
     @Override
     public DataAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
