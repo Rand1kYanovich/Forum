@@ -1,80 +1,98 @@
-
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity"
-    android:background="?android:selectableItemBackground">
+    android:background="?android:selectableItemBackground"
+    tools:context=".MainActivity">
 
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/little_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="290dp"
+        android:orientation="vertical">
 
-        >
-
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:layout_alignTop="@+id/little_view"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/meme"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/me"
+                app:layout_constraintStart_toStartOf="parent" />
 
-                />
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whois"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="SSsssssssssssssssss"
+                android:textColor="#999898"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/meme"
+                app:layout_constraintStart_toEndOf="@+id/meme" />
 
 
             <TextView
                 android:id="@+id/whois"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="22dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="top"
                 android:paddingTop="10dp"
                 android:text="Кого ищет"
                 android:textColor="#888787"
-                android:textSize="24sp">
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
+
             <TextView
                 android:id="@+id/time"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:gravity="end"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:text="15h"
                 android:textColor="#999898"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-
-        </LinearLayout>
-        <TextView
-            android:id="@+id/about"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="22dp"
-            android:paddingTop="4dp"
-            android:text="SS"
-            android:textColor="#999898"
-            android:textSize="20sp"
-            />
+        </android.support.constraint.ConstraintLayout>
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <android.support.constraint.ConstraintLayout
             android:id="@+id/fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
@@ -85,32 +103,41 @@
                 android:paddingTop="4dp"
                 android:textColor="#999898"
                 android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
 
                 />
-        </LinearLayout>
-
+        </android.support.constraint.ConstraintLayout>
 
         <TextView
             android:id="@+id/quote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:paddingLeft="22dp"
-            android:paddingTop="4dp"
+            android:text="Это все конечно круто"
             android:textColor="#999898"
-            android:textSize="20sp"/>
-
-
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="#b0b0b0"
-            >
-        </View>
-    </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/quote" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 
+</android.support.constraint.ConstraintLayout>
 
-</RelativeLayout>
+
