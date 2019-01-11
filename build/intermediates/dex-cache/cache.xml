@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Даниил\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.3\bde0667d7414c16ed62d3cfe993cff7f9d732373\constraint-layout-solver-1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bde0667d7414c16ed62d3cfe993cff7f9d732373">
+        <dex dex="C:\AndroidProject\RunD1ck-recyclerwithnawdrawer-38bd4689f047\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.1.3_441bb1d1c43d1a8cc67bccd4ba1e4732ff425a92.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Даниил\.android\build-cache\d5e5d4c83497d015aca763b5d76751986eff3a3e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -36,6 +45,15 @@
         revision="25.0.2"
         sha1="1ecd7b4dfedf4467e053e7f9b463b0bf688d3b63">
         <dex dex="C:\AndroidProject\RunD1ck-recyclerwithnawdrawer-38bd4689f047\app\build\intermediates\pre-dexed\debug\classes_5d7da1b37ef1d8573fa1a66ce452d0c85b52c705.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Даниил\.android\build-cache\fb3dbd3c32bec991957d8aa06ac16ceef32c5b6a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b15c6ded887ad967e20bb335c1a121b253c04dce">
+        <dex dex="C:\AndroidProject\RunD1ck-recyclerwithnawdrawer-38bd4689f047\app\build\intermediates\pre-dexed\debug\classes_ad3427dc63f8b5f9b9a02a068934739bddd3a503.jar" />
     </item>
     <item
         is-multidex="false"

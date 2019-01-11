@@ -4,6 +4,7 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -78,7 +79,7 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         final TextView whoisView, aboutView, timeView,aboutfullView;
-        final LinearLayout fragment,littleView;
+        final ConstraintLayout fragment,littleView;
         private int originalHeight = 0;
         private int min_height;
         int i = 0;
@@ -86,11 +87,11 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         ViewHolder(View view){
             super(view);
             view.setOnClickListener(this);
-            littleView = (LinearLayout)view.findViewById(R.id.little_view) ;
+            littleView = (ConstraintLayout)view.findViewById(R.id.little_view) ;
             whoisView = (TextView) view.findViewById(R.id.whois);
             aboutView = (TextView) view.findViewById(R.id.about);
             timeView = (TextView)view.findViewById(R.id.time);
-            fragment = (LinearLayout)view.findViewById(R.id.fragment);
+            fragment = (ConstraintLayout) view.findViewById(R.id.fragment);
             aboutfullView = (TextView)view.findViewById(R.id.aboutfull);
             min_height=fragment.getHeight() + 400;
             if(isViewExpanded==false) {
